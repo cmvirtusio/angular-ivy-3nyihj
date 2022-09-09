@@ -1,0 +1,12 @@
+<div>Stock Lookup</div>
+
+<div>
+	History:{{joinedStringify(growthOf10Kinput.searchedTickers)}}
+</div>
+
+<div>
+	<input type="text" #ticker />
+	<button (click)="searchTicker(ticker.value)">Search</button>
+</div>
+
+<app-growth10k [growthOf10Kinput]="growthOf10Kinput" [latestTicker]="latestTicker"></app-growth10k>
